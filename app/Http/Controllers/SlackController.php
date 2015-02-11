@@ -29,7 +29,7 @@ class SlackController extends Controller {
         $response = $commander->execute('chat.postMessage', [
             'username'=> 'Mr. Boss man',
             'channel' => Auth::user()->user_id,
-            'text'    => 'Hello, world!'
+            'text'    => 'What are you doing?'
         ]);
 
         return redirect('/');
